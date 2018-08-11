@@ -9,11 +9,11 @@ import time
 #import RPi.GPIO as GPIO
 
 from bluetooth import *
-config={
+config={        #fill according to your firebase database
     "apiKey": "apiKey",
-    "authDomain": "appff-793ad.firebaseio.com",
-    "databaseURL": "https://appff-793ad.firebaseio.com/",
-    "storageBucket": "appff-793ad.appspot.com"
+    "authDomain": "domain name",
+    "databaseURL": "https://databasename.com/",
+    "storageBucket": "databasename.com"
 }
 firebase =pyrebase.initialize_app(config)
 db=firebase.database()
